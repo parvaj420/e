@@ -1,0 +1,362 @@
+.info-btn{
+   background: rgb(97, 45, 255);
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   padding: 12px 13px;
+   border-radius: 15px;
+   border: none;
+   scale: 1.1;
+   margin-top: 10px;
+}
+.p-r{
+    position: relative;
+    width: 100%;
+}
+/* nav */
+nav .navbar-brand{
+    font-size: 25px;
+    font-weight: 900;
+}
+nav svg{
+    color: white;
+}
+nav .collapse {
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+}
+nav .collapse a{
+   color: white;
+}
+nav .bg-light-50{
+    background: black;
+    border: 1px solid white;
+    outline: none !important;
+    color: white;
+}
+
+.navPage .box1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    padding: 10px 8% 0 8%;
+    width: 102vw !important;
+
+}
+.navPage .box1 a{color: rgb(255, 255, 255); margin-top: -13px;}
+.navPage .box1 svg{
+    font-size: 17px;
+    margin: 0 13px 10px 0px;
+}
+.navPage .box1 .gap3{
+    gap: 30px;
+}
+a{
+    position: relative;
+    transition: .2s !important;
+    overflow: hidden;
+    padding: 0 2px;
+    text-decoration: none;
+    display: inline-block !important;
+    width: max-content !important;
+    height: max-content !important;
+  }
+  a::before, .active::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    transition: .3s;
+    left: 0;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+  a:hover{
+    color: white !important;
+  }
+  .active{border-bottom: 2px solid gray;}
+  
+/* page1 */
+.page1{
+    padding: 0px 6%;
+}
+.page1 .bigText{
+    font-size: 10.4vw;
+    font-weight: 500;
+    line-height: 1em;
+    margin-top: 50px;
+}
+.page1 h2{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 237px;
+}
+.page1 .video{
+    position: relative;
+    width: 65vw;
+    height: 67vw;
+    overflow: hidden;
+    transform: translate(40%, -30%);
+    z-index: -1;
+}
+.page1 video{
+    position: absolute;
+    width: 65vw;
+    /* height: 1090px; */
+}
+.page1  .h2{
+    width: 100%;
+    text-align: end;
+    transform: translateY(-26vw);
+}
+/* .page2//////// */
+.page2{
+    transform: translateY(-28vw);
+}
+.page2 .img-box img{
+  max-width: 322px;
+  height: 432px;
+}
+.page2 .img-box img:nth-child(2){
+    transform: translate(100px, -100px);
+    max-width: 385px;
+    height: 385px;
+}
+.page2 .img-box img:nth-child(3){
+    transform: translate(20%, -100%);
+    max-width: 230px;
+    height: 170px;
+}
+.page2 h1{
+    margin-top: 100px;
+    font-size: 56px;
+    max-width: 397px;
+    font-weight: 400;
+}
+.page2 h5{
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 326px;
+}
+.page2 p{
+    font-size: 18px;
+    max-width: 350px;
+    font-weight: 200;
+}
+
+/* page3/////// */
+.page3 h1{
+    margin-top: -20vw;
+}
+.page3 .card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.page3 .card{
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    background: black;
+    border: none !important;
+    outline: none !important;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+.page3 .card .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.586)),
+     url(https://img.freepik.com/free-photo/3d-internet-secuirty-badge_1048-18107.jpg?size=626&ext=jpg&ga=GA1.1.1350323.1697652048&semt=sph);
+     background-size: cover;
+     background-position: center;
+     transition:1s;
+}
+.page3 .card:nth-child(2) .img{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.586)),
+     url(https://img.freepik.com/premium-vector/abstract-geometric-technology-digital-hi-tech-concept_41814-447.jpg?size=626&ext=jpg&ga=GA1.1.1350323.1697652048&semt=ais);
+     background-position: center;
+     background-size: cover;
+}
+.page3 .card:nth-child(3) .img{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.608),rgba(0, 0, 0, 0.586)),
+     url(https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149156736.jpg?size=626&ext=jpg&ga=GA1.1.1350323.1697652048&semt=ais);
+     background-position: center;
+     background-size: cover;
+}
+.page3 .card:hover .img{
+    scale: 1.2;
+}
+.page3 .p-2{
+    margin-top: 11rem;
+    z-index: 1;
+}
+.page3 .card h5{
+    font-size: 28px;
+}
+.page3 .card p{
+    font-size: 18px;
+}
+
+/* .page4/////// */
+
+.page4 .line{
+    margin: auto;
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    border-radius: 100px;
+}
+.page4 svg{
+    color: rgb(0, 216, 22);
+    scale: 3;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.page4 .col-md-4:hover svg{
+    animation: hover .6s linear forwards;
+}
+@keyframes hover {
+    50%{
+     margin-left: 20px;
+    }
+}
+.page4 .col-md-4{
+    width: 16.7rem;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.page4 .col-md-4:nth-child(2) svg{
+    color: rgb(121, 4, 255);
+}
+.page4 .col-md-4:nth-child(3) svg{
+    color: rgb(187, 0, 255);
+}
+.page4 .row{
+    margin: 150px 0;
+}
+.page4 .row h1{
+    font-size: 100px;
+}
+.page4 .row h5{
+    font-size: 24px;
+}
+.page4 .item-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+}
+
+/* 56 32 18 404 */
+/* footer///////// */
+footer{
+    overflow: hidden;
+    width: 100vw;
+    margin: auto !important;
+    padding: 100px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.11),rgb(255, 255, 255)), url(https://img.freepik.com/free-vector/3d-triangle-background-with-vivid-colors_23-2148396402.jpg?size=626&ext=jpg&ga=GA1.1.1350323.1697652048&semt=ais);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding-bottom: 0;
+}
+footer .row h1{
+    font-size: 56px;
+}
+footer .row h5{
+    font-size: 32px;
+}
+footer .row label{
+    font-size: 18px;
+}
+footer .row input{
+    width: 404px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+footer .row button{
+    padding: 10px 30px;
+    margin-left: 20px;
+}
+footer .row:nth-child(2){
+    margin-top: 15vw;
+}
+footer .row:nth-child(2) h4{font-size: 28px;}
+footer .row:nth-child(2) p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .row:nth-child(2) .d-s{
+    width: 250px;
+}
+footer .row:nth-child(2) svg{scale: 1.4; margin-top: -10px; margin-bottom: 20px; cursor: pointer;}
+
+footer .row:nth-child(2) .d-flex{gap: 30px;}
+@media (max-width:767px) {
+    
+.page4 .col-md-4{
+    width: max-content
+     }
+     footer .row:nth-child(2) .d-s{
+         margin-top: 100px;
+     }
+}
+@media (max-width:400px) {
+.page1 .video{
+    width: 77vw;
+    height: 79vw;
+    overflow: hidden;
+    margin: auto !important;
+    transform: translate(0%, 10%);
+}
+.page1 video{
+    width: 77vw;
+}
+.page1  .h2{
+    width: 100%;
+    text-align: end;
+    transform: translateY(-2vw);
+}
+.page2{position: relative; transform: translateY(-13vw);}
+.page2 .img-box{
+    transform: translateY(20%);
+}
+.page2 .img-box img{
+    max-width: 42vw;
+    height: auto;
+  }
+  .page2 .img-box img:nth-child(2){
+      transform: translate(30%, -20%);
+      max-width: 68vw;
+      height: auto;
+  }
+  .page2 .img-box img:nth-child(3){
+      transform: translate(20%, -60%);
+      max-width: 42vw;
+      height: 170px;
+  }
+  .page3 h1{
+    margin-top: 10vw;
+    font-size: 10vw;
+}
+.page4 .head{
+    font-size: 10vw;
+}
+.page4 .line{width: 100%;}
+}
